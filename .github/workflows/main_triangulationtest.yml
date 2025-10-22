@@ -82,6 +82,8 @@ jobs:
           app-name: 'triangulationtest'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-
+          enable-oryx-build: true  # This enables remote build
+          scm-do-build-during-deployment: true  # This ensures dependencies are installed
           
+
 
